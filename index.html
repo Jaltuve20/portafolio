@@ -1,0 +1,252 @@
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Define el idioma principal del documento como español -->
+<head> <!-- Inicia la sección de metadatos del documento -->
+  <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+  <title>Portafolio | Sꓘ</title> <!-- Establece el título que aparece en la pestaña del navegador -->
+  
+  <!-- Enlaces a hojas de estilo y fuentes externas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Iconos Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Google Fonts -->
+  <link rel="stylesheet" href="styles.css"> <!-- Hoja de estilos local -->
+</head>
+
+<body> <!-- Inicia el contenido visible de la página -->
+  <!-- Encabezado de la página -->
+  <header class="header-neon"> <!-- Header con clase para estilos neon -->
+    <div class="logo-container"> <!-- Contenedor del logo -->
+      <div class="logo-neon" id="logo">Sꓘ</div> <!-- Logo con efecto neon -->
+    </div>
+    <nav> <!-- Barra de navegación -->
+      <ul> <!-- Lista de elementos del menú -->
+        <li><a href="#inicio">Inicio</a></li> <!-- Enlace a sección Inicio -->
+        <li><a href="#sobre-mi">Sobre Mí</a></li> <!-- Enlace a sección Sobre Mí -->
+        <li><a href="#proyectos">Proyectos</a></li> <!-- Enlace a sección Proyectos -->
+        <li><a href="#habilidades">Habilidades</a></li> <!-- Enlace a sección Habilidades -->
+        <li><a href="#contacto">Contacto</a></li> <!-- Enlace a sección Contacto -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main> <!-- Etiqueta semántica para el contenido principal -->
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="section-neon"> <!-- Sección con ID para enlaces y clase para estilos -->
+      <h1>Hola, <span class="neon-name">Sꓘ</span></h1> <!-- Título principal con nombre en estilo neon -->
+      <p>Practicante desarrollador Front End | Proximamente Back End | Especialista en Efectos Visuales</p> <!-- Descripción breve -->
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="section-neon">
+      <h2>> Sobre Mí</h2> <!-- Título de sección -->
+      <p>Nada que decir aun...</p> <!-- Contenido pendiente -->
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="section-neon">
+      <h2>> Mis Proyectos</h2>
+      <div class="proyectos-grid"> <!-- Contenedor grid para las tarjetas de proyectos -->
+        <!-- Tarjeta de Proyecto 1 -->
+        <div class="proyecto-card"> <!-- Tarjeta individual de proyecto -->
+          <div class="proyecto-imagen"> <!-- Contenedor de la imagen -->
+            <img src="portafolio.png" alt="Proyecto 1"> <!-- Imagen del proyecto -->
+            <div class="proyecto-overlay"> <!-- Capa superpuesta para efectos hover -->
+              <div class="proyecto-links"> <!-- Enlaces del proyecto -->
+                <a href="#" target="_blank" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a> <!-- Enlace a demo -->
+                <a href="https://github.com/Jaltuve20/portafolio" target="_blank" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a> <!-- Enlace a GitHub -->
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info"> <!-- Información del proyecto -->
+            <h3>Portafolio Personal</h3> <!-- Título del proyecto -->
+            <p>Mi sitio web personal con diseño neon y efectos interactivos.</p> <!-- Descripción -->
+            <p>Es el que estás viendo actualmente.</p> <!-- Nota adicional -->
+            <div class="tech-stack"> <!-- Tecnologías usadas -->
+              <span class="tech-badge">HTML5</span> <!-- Badge de tecnología -->
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tarjeta de Proyecto 2 -->
+        <div class="proyecto-card">
+          <div class="proyecto-imagen">
+            <img src="proyecto.png" alt="Proyecto 2">
+            <div class="proyecto-overlay">
+              <div class="proyecto-links">
+                <a href="#" target="_blank" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="#" target="_blank" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <h3>Proyecto Futuro</h3>
+            <p>Espacio reservado para un próximo proyecto que estoy desarrollando.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Efecto de partículas -->
+    <div id="particles-js"></div> <!-- Div para el efecto de partículas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> <!-- Librería particles.js -->
+    
+    <!-- Sección de Habilidades -->
+    <section id="habilidades" class="section-neon">
+      <h2>> Mis Habilidades</h2>
+      <div class="skills-container"> <!-- Contenedor de habilidades -->
+        <div class="skill-category"> <!-- Categoría de habilidades -->
+          <h3>Front End</h3> <!-- Título de categoría -->
+          <div class="skills-grid"> <!-- Grid de habilidades -->
+            <!-- Habilidad HTML -->
+            <div class="skill-item"> <!-- Item de habilidad individual -->
+              <i class="fab fa-html5"></i> <!-- Icono de la habilidad -->
+              <span>HTML5</span> <!-- Nombre de la habilidad -->
+              <div class="skill-bar"> <!-- Barra de progreso -->
+                <div class="skill-level" style="width: 50%"></div> <!-- Nivel de habilidad (50%) -->
+              </div>
+            </div>
+            <!-- Habilidad CSS -->
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 50%"></div>
+              </div>
+            </div>
+            <!-- Habilidad JavaScript -->
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section-neon">
+      <h2>> Contacto</h2>
+      <div class="contact-buttons"> <!-- Botones de contacto -->
+        <!-- Botón de Email -->
+        <a href="#!" class="contact-btn email" id="emailBtn">
+          <i class="fas fa-envelope"></i> Email <!-- Icono y texto -->
+        </a>
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/51931574267" target="_blank" class="contact-btn whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <!-- Botón de GitHub -->
+        <a href="https://github.com/Jaltuve20" target="_blank" class="contact-btn github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer-neon"> <!-- Footer con estilo neon -->
+    <div class="footer-content"> <!-- Contenido del footer -->
+      <p>&copy; <span id="current-year"></span> Sꓘ. Todos los derechos reservados.</p> <!-- Copyright dinámico -->
+      <div class="footer-links"> <!-- Enlaces del footer -->
+        <a href="#" class="footer-link">Política de Privacidad</a> <!-- Enlace a política -->
+        <a href="#" class="footer-link" id="terminosLink">Términos de Servicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="terminos-servicio" id="terminosModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeTerminosModal">&times;</span>
+      <div class="modal-header">
+        <h2><span class="neon-underline">Términos de Servicios</span></h2>
+        <p class="modal-subtitle"></p>
+        <p class="neon-underline"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, iste quibusdam voluptatibus quia officiis quas temporibus aspernatur officia iure rerum molestiae exercitationem aperiam accusantium non ipsum veritatis nulla ullam. Perspiciatis eum molestias praesentium nostrum eaque.</p>
+        <br>
+        <p class="neon-underline"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis vero quae maiores possimus eum laborum rem sit aspernatur eos.</p>
+        <br> <br>
+        <p class="neon-underline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique architecto asperiores expedita praesentium nostrum, optio, at facilis quaerat, recusandae explicabo ea veniam unde saepe fuga! Laboriosam, vel! Labore, delectus molestias?</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal de Contacto (oculto inicialmente) -->
+  <div id="emailModal" class="modal"> <!-- Contenedor del modal -->
+    <div class="modal-content"> <!-- Contenido del modal -->
+      <span class="close-modal" id="closeEmailModal">&times;</span> <!-- Botón para cerrar el modal -->
+      
+      <div class="modal-header"> <!-- Encabezado del modal -->
+        <h2><span class="neon-underline">Contáctame</span></h2> <!-- Título con estilo -->
+        <p class="modal-subtitle">¡Responderé en menos de 24 horas!</p> <!-- Subtítulo -->
+      </div>
+  
+      <!-- Formulario de contacto -->
+      <form id="contactForm" action="https://formsubmit.co/altuveleonardo96@gmail.com" method="POST">
+        <!-- Campos ocultos para configuración del formulario -->
+        <input type="hidden" name="_next" value="https://jaltuve20.github.io/Portafolio/gracias.html"> <!-- Página de redirección -->
+        <input type="hidden" name="_captcha" value="false"> <!-- Desactiva captcha -->
+        <input type="hidden" name="_template" value="table"> <!-- Estilo del email -->
+  
+        <!-- Grupo de campo para nombre -->
+        <div class="form-group">
+          <input type="text" id="nombre" name="nombre" required> <!-- Input para nombre -->
+          <label for="nombre"> <!-- Etiqueta flotante -->
+            <i class="fas fa-user"></i> Nombre completo <!-- Icono y texto -->
+          </label>
+          <div class="underline"></div> <!-- Efecto visual -->
+        </div>
+  
+        <!-- Grupo de campo para email -->
+        <div class="form-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">
+            <i class="fas fa-envelope"></i> Correo electrónico
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <!-- Grupo de campo para asunto -->
+        <div class="form-group">
+          <input type="text" id="asunto" name="asunto" required>
+          <label for="asunto">
+            <i class="fas fa-tag"></i> Asunto
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <!-- Grupo de campo para mensaje -->
+        <div class="form-group">
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <!-- Área de texto -->
+          <label for="mensaje">
+            <i class="fas fa-comment-alt"></i> Mensaje
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <!-- Botón de envío -->
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Enviar Mensaje</span> <!-- Texto del botón -->
+          <span class="btn-icon"> <!-- Icono del botón -->
+            <i class="fas fa-paper-plane"></i>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script local para funcionalidades -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
