@@ -53,7 +53,9 @@
             <div class="proyecto-overlay"> <!-- Capa superpuesta para efectos hover -->
               <div class="proyecto-links"> <!-- Enlaces del proyecto -->
                 <a href="#" target="_blank" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a> <!-- Enlace a demo -->
-                <a href="https://github.com/Jaltuve20/portafolio" target="_blank" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a> <!-- Enlace a GitHub -->
+                <a href="https://github.com/Jaltuve20/portafolio" target="_blank" class="proyecto-link">
+                  <i class="fab fa-github"></i> Ver Código
+                </a>
               </div>
             </div>
           </div>
@@ -75,8 +77,8 @@
             <img src="proyecto.png" alt="Proyecto 2">
             <div class="proyecto-overlay">
               <div class="proyecto-links">
-                <a href="#" target="_blank" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a>
-                <a href="#" target="_blank" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a>
+                <a href="#" id="btnAlert" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="#" id="btnAlert2" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a>
               </div>
             </div>
           </div>
@@ -90,6 +92,7 @@
             </div>
           </div>
         </div>
+        
       </div>
     </section>
     
@@ -165,6 +168,27 @@
   </footer>
 
   <!-- Modal -->
+
+  <div class="alerta" id="alertaModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeAlertaModal">&times;</span>
+      <div class="modal-header">
+        <h2><span class="neon-underline">ALERTA</span></h2>
+        <p class="neon-underline"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi neque suscipit esse recusandae.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="alerta" id="alertaModal2">
+    <div class="modal-content">
+      <span class="close-modal" id="closeAlertaModal">&times;</span>
+      <div class="modal-header">
+        <h2><span class="neon-underline">ALERTA</span></h2>
+        <p class="neon-underline"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi neque suscipit esse recusandae.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal -->
   <div class="terminos-servicio" id="terminosModal">
     <div class="modal-content">

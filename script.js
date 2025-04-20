@@ -97,16 +97,23 @@ document.addEventListener('DOMContentLoaded', function() {
   // 3. FORMULARIO DE CONTACTO (FORMSUBMIT)
   // ====================
   
-  // Elementos del DOM para el formulario
-  const emailBtn = document.getElementById('emailBtn'); // Botón para abrir modal
-  const modal = document.getElementById('emailModal'); // Modal de contacto
-  const closeEmailModal = document.getElementById('closeEmailModal'); // Botón para cerrar modal
-  const contactForm = document.getElementById('contactForm'); // Formulario
-  const terminosLink = document.getElementById('terminosLink'); // Asegúrate de agregar este ID al enlace
-  const terminosModal = document.getElementById('terminosModal');
-  const closeTerminosModal = document.getElementById('closeTerminosModal');
+// Elementos del DOM para el formulario
+const emailBtn = document.getElementById('emailBtn'); // Botón para abrir modal
+const modal = document.getElementById('emailModal'); // Modal de contacto
+const closeEmailModal = document.getElementById('closeEmailModal'); // Botón para cerrar modal
+const contactForm = document.getElementById('contactForm'); // Formulario
+const terminosLink = document.getElementById('terminosLink'); // Asegúrate de agregar este ID al enlace
+const terminosModal = document.getElementById('terminosModal');
+const closeTerminosModal = document.getElementById('closeTerminosModal');
+const btnAlert = document.getElementById('btnAlert'); 
+const btnAlert2 = document.getElementById('btnAlert2'); 
+const closeAlertaModal = document.getElementById('closeAlertaModal');
+const closeAlertaModal2 = document.getElementById('closeAlertaModal2');
 
-  // Modal de Contacto
+// Necesitarás un botón para abrir el modal, asegúrate de tener algo como:
+const abrirCodigoBtn = document.getElementById('abrirCodigoBtn'); // Debes crear este botón en tu HTML
+
+// Modal de Contacto
 if (emailBtn) {
   emailBtn.addEventListener('click', function(e) {
     e.preventDefault();
@@ -138,6 +145,38 @@ if (closeTerminosModal) {
   });
 }
 
+// Abrir modal de alerta
+if (btnAlert) {
+  btnAlert.addEventListener('click', function(e) {
+    e.preventDefault();
+    alertaModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+if (closeAlertaModal) {
+  closeAlertaModal.addEventListener('click', function() {
+    alertaModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  });
+}
+
+// Abrir modal de alerta
+if (btnAlert2) {
+  btnAlert2.addEventListener('click', function(e) {
+    e.preventDefault();
+    alertaModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+if (closeAlertaModal2) {
+  closeAlertaModal2.addEventListener('click', function() {
+    alertaModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  });
+}
+
 // Cerrar modales al hacer clic fuera del contenido
 window.addEventListener('click', function(e) {
   if (e.target === emailModal) {
@@ -146,6 +185,10 @@ window.addEventListener('click', function(e) {
   }
   if (e.target === terminosModal) {
     terminosModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+  if (e.target === alertaModal) {
+    alertaModal.style.display = 'none';
     document.body.style.overflow = 'auto';
   }
 });
